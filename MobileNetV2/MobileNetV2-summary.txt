@@ -1,0 +1,15 @@
+
+
+Model - MobileNetV2
+
+* Train Accuracy - 0.14%
+* Train loss - 0.95
+
+* Validation Accuracy - 95.24%
+* validation loss - 0.23
+
+* Test Accuracy - 97.14%
+* Test loss - 0.19
+
+Elapsed - 41.0 Mins
+

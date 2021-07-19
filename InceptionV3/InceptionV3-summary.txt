@@ -1,0 +1,15 @@
+
+
+Model - InceptionV3
+
+* Train Accuracy - 0.96%
+* Train loss - 0.12
+
+* Validation Accuracy - 90.48%
+* validation loss - 0.42
+
+* Test Accuracy - 97.14%
+* Test loss - 0.11
+
+Elapsed - 50.0 Mins
+

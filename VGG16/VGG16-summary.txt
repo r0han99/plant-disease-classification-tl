@@ -1,0 +1,15 @@
+
+
+Model - VGG16
+
+* Train Accuracy - 89.94%
+* Train loss - 26.09
+
+* Validation Accuracy - 85.71%
+* validation loss - 0.33
+
+* Test Accuracy - 92.38%
+* Test loss - 0.32
+
+Elapsed - 44.0 Mins
+

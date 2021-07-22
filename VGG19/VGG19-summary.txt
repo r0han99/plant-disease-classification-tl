@@ -1,0 +1,15 @@
+
+
+Model - VGG19
+
+* Train Accuracy - 89.26%
+* Train loss - 25.59
+
+* Validation Accuracy - 87.62%
+* validation loss - 0.38
+
+* Test Accuracy - 86.67%
+* Test loss - 0.34
+
+Elapsed - 46.0 Mins
+

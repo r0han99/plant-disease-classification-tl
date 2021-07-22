@@ -6,11 +6,12 @@ from tensorflow.keras.models import load_model
 from zipfile import ZipFile
 
 
+
 def evaluate_model(modelname,model, valid, test, history, elapsed):
 
 
   # zipobj
-  zipobj = ZipFile('{}.zip'.format(modelname), 'w')
+  zipobj = ZipFile('./drive/MyDrive/{}.zip'.format(modelname), 'w')
 
   # evaluating validation
   new_loss, new_acc = model.evaluate_generator(valid)
@@ -29,8 +30,8 @@ def evaluate_model(modelname,model, valid, test, history, elapsed):
   plt.plot(history['val_loss'],ls='--',color='orange',label='validation-loss')
   plt.title('Epochs vs Validation_loss & Train_loss')
   plt.legend()
-  plt.savefig("loss_valloss-{}.png".format(modelname))
-  zipobj.write("loss_valloss-{}.png".format(modelname))
+  plt.savefig("./drive/MyDrive/loss_valloss-{}.png".format(modelname))
+  zipobj.write("./drive/MyDrive/loss_valloss-{}.png".format(modelname))
 
   # Plotting - Accuracy
 
@@ -39,12 +40,12 @@ def evaluate_model(modelname,model, valid, test, history, elapsed):
   plt.plot(history['val_accuracy'],ls='--',color='orange',label='validation-Accuracy')
   plt.title('Epochs vs Validation_Accuracy & Train-Accuracy')
   plt.legend(loc='upper left')
-  plt.savefig("acc-valacc-{}.png".format(modelname))
-  zipobj.write("acc-valacc-{}.png".format(modelname))
+  plt.savefig("./drive/MyDrive/acc-valacc-{}.png".format(modelname))
+  zipobj.write("./drive/MyDrive/acc-valacc-{}.png".format(modelname))
 
 
-  history.to_csv("{}-stats.csv".format(modelname))
-  zipobj.write("{}-stats.csv".format(modelname))
+  history.to_csv("./drive/MyDrive/{}-stats.csv".format(modelname))
+  zipobj.write("./drive/MyDrive/{}-stats.csv".format(modelname))
 
   # writing content
 
@@ -63,17 +64,17 @@ Model - {}
 
 Elapsed - {} Mins
 
-""".format('MobileNetV2',history.iloc[-1:,:].values[0][:2][1],history.iloc[-1:,:].values[0][:2][0],(new_acc*100),new_loss, (test_acc*100), test_loss, elapsed//60)
+""".format(modelname, history.iloc[-1:,:].values[0][:2][1]*100, history.iloc[-1:,:].values[0][:2][0]*100,(new_acc*100), new_loss, (test_acc*100), test_loss, elapsed//60)
 
 
-  with open("{}-summary.txt".format(modelname), "w") as f:
+  with open("./drive/MyDrive/{}-summary.txt".format(modelname), "w") as f:
     f.write(content)
 
-  zipobj.write("{}-summary.txt".format(modelname))
+  zipobj.write("./drive/MyDrive/{}-summary.txt".format(modelname))
 
   print("preserving records")
-  model.save("{}.h5".format(modelname))
-  zipobj.write("{}.h5".format(modelname))
+  model.save("./drive/MyDrive/{}.h5".format(modelname))
+  zipobj.write("./drive/MyDrive/{}.h5".format(modelname))
 
   print("{} Records Created".format(modelname))
 

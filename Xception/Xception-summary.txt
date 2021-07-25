@@ -1,0 +1,15 @@
+
+
+Model - Xception
+
+* Train Accuracy - 92.51%
+* Train loss - 20.48
+
+* Validation Accuracy - 91.43%
+* validation loss - 0.32
+
+* Test Accuracy - 93.33%
+* Test loss - 0.22
+
+Elapsed - 47.0 Mins
+

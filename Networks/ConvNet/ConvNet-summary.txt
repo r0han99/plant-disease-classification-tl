@@ -1,0 +1,15 @@
+
+
+Model - ConvNet
+
+* Train Accuracy - 72.47%
+* Train loss - 62.52
+
+* Validation Accuracy - 67.62%
+* validation loss - 0.67
+
+* Test Accuracy - 76.19%
+* Test loss - 0.55
+
+Elapsed - 41.0 Mins
+

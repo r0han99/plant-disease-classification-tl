@@ -1,4 +1,5 @@
-# Comparative Study on Reliability of Transfer Learning to Classify Plant-Based Diseases
+<h1>Comparative Study on Reliability of Transfer Learning to Classify Plant-Based Diseases</h1>
+
 
 ***
 

@@ -1,4 +1,4 @@
-<h1>Comparative Study on Reliability of Transfer Learning to Classify Plant-Based Diseases</h1>
+<h1>Comparative Study on Reliability of Transfer Learning to Classify Plant-Based Diseases <a href="https://www.ijeat.org/portfolio-item/f30800810621/"><img src="leaf.png" alt="leaf-logo" height=28 width=28></a></h1>
 
 
 ***
